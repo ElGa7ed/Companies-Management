@@ -16,9 +16,9 @@ class EmployeesController extends Controller
 
     public function index()
     {
-        $companies = Employee::get();
+        $employees = Employee::get();
 
-        if (!$companies)
+        if (!$employees)
             return $this->returnError('001', 'هذا الموظف غير موجود');
 
         return $this->returnData('employee', $employees);

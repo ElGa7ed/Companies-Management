@@ -39,6 +39,13 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+
+                        <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('dashboard.employees') }}">{{ __('employees') }}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('dashboard.companies') }}">{{ __('companies') }}</a>
+                                </li>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">

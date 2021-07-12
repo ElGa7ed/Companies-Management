@@ -54,8 +54,8 @@ Route::group([ 'middleware' => 'auth'], function () {
             Route::get('edit/{id}',[CompanyController::class, 'edit']) -> name('dashboard.companies.edit');
             Route::post('update/{id}',[CompanyController::class, 'update']) -> name('dashboard.companies.update');
             Route::get('delete/{id}',[CompanyController::class, 'destroy']) -> name('dashboard.companies.delete');
-            
-            
+
+
         });
         ######################### End companies Route      ########################
 
